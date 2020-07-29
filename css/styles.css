@@ -1,0 +1,33 @@
+:root{
+	/*light theme o tema por defecto*/
+	--light-color: #eee;
+	--dark-color: #191919;
+}
+
+.dark-theme{
+    --bg-color: var(--dark-color);
+	--text-color: var(--light-color);
+}
+.light-theme{
+	--bg-color: var(--light-color);
+	--text-color: var(--dark-color);
+}
+
+body{
+	min-height:100vh;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	
+	background-color: var(--bg-color);
+	color: var(--text-color)
+}
+.toggle-theme{
+	display: block;
+	padding: .5em 1em;
+	font-size: 100%;
+	border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
